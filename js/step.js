@@ -130,7 +130,7 @@ function eachIngredient(ing) {
 function updateIngredient(ing, member) {
     var ingredient = "";
     ing.forEach(element => {
-        var add = parseInt(element.quantity * parseInt(member)/nbDefault);
+        var add = element.quantity * parseInt(member)/nbDefault;
         ingredient += `
         <tr>
             <td><img src = "${element.iconUrl}" width = "50"></td>
