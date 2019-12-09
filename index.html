@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Love You</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        tr,
+        td {
+            padding: 15px;
+        }
+
+        #ingredient {
+            border-left: solid 2px pink;
+            border-top: solid 2px pink;
+        }
+
+        #step {
+            border-left: solid 2px pink;
+            border-bottom: solid 2px pink;
+            border-right: solid 2px pink;
+        }
+
+        #recipe-name {
+            border-bottom: 2px solid;
+            padding: 20px;
+        }
+
+        #recipe-image {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <select class="form-control" id="chooseRecipe">
+                    <option value="" disabled selected>Choose recipe</option>
+                </select>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-6" id="recipe"></div>
+            <div class="col-6" id="guest">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="minus">&minus;</button>
+                    </div>
+                    <input type="text" class="form-control text-center" value="1" id="member" disabled>
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="plus">&plus;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" id="ingredient">
+
+            </div>
+            <div class="col-6" id="step">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/step.js"></script>
+</body>
+
+</html>
